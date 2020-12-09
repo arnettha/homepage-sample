@@ -14,7 +14,7 @@ This is a home page sample
 * [Webpack](https://webpack.js.org/)
 
 
-## Instalation
+## Instalation and Runtime
 
 ```bash
 npm install
