@@ -5,11 +5,11 @@ function setNewsletterHideExpireTime() {
   localStorage.setItem(EXPIRE_TIME_NEWSLETTER_HIDE, expireTime);
 }
 
-function shouldNewsletterHide() {
+function shouldNewsletterShow() {
   return (new Date().getTime() > localStorage.getItem(EXPIRE_TIME_NEWSLETTER_HIDE));
 }
 
 export {
   setNewsletterHideExpireTime,
-  shouldNewsletterHide,
+  shouldNewsletterShow,
 }

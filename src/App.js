@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { setNewsletterHideExpireTime, shouldNewsletterHide } from './utils/storage';
+import { setNewsletterHideExpireTime, shouldNewsletterShow } from './utils/storage';
 import PageBase from './components/elements/PageBase';
 import NotificationPanel from './components/fragments/NotificationPanel';
 import NewsletterPanel from './components/fragments/NewsletterPanel';
@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   _showNewsletter = () => {
-    if (!shouldNewsletterHide()) return;
+    if (!shouldNewsletterShow()) return;
 
     const newsletterPanel = document.getElementById('newsletter-panel');
     if (window.pageYOffset > (window.innerHeight / 3)) {
