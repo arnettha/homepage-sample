@@ -5,6 +5,10 @@ import { jsx } from '@emotion/react';
 import { root } from './styles';
 
 class PageBase extends Component {
+  componentDidMount() {
+    document.title = 'Arnettha Septinez | Cermati.com Front-end Developer Entry Test';
+  }
+
   render() {
     return (
       <div css={root}>

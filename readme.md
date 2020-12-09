@@ -16,6 +16,7 @@ This is a home page sample
 
 ## Instalation and Runtime
 
+The app will be running on `port:8080`
 ```bash
 npm install
 npm run start
